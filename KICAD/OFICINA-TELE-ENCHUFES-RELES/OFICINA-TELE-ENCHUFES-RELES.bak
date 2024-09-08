@@ -1,0 +1,429 @@
+EESchema Schematic File Version 4
+LIBS:OFICINA-TELE-ENCHUFES-RELES-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "17 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x12_Female ARDUINO_L1
+U 1 1 54B9C5FD
+P 5706 2545
+F 0 "ARDUINO_L1" V 5656 2545 60  0000 C CNN
+F 1 "ARDUINO L" V 5756 2545 60  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 5706 2545 60  0001 C CNN
+F 3 "" H 5706 2545 60  0000 C CNN
+	1    5706 2545
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x12_Female ARDUINO_R1
+U 1 1 54B9C60A
+P 6256 2545
+F 0 "ARDUINO_R1" V 6206 2545 60  0000 C CNN
+F 1 "ARDUINO_R" V 6306 2545 60  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 6256 2545 60  0001 C CNN
+F 3 "" H 6256 2545 60  0000 C CNN
+	1    6256 2545
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 54BAC241
+P 6807 2345
+F 0 "#PWR03" H 6807 2445 30  0001 C CNN
+F 1 "VCC" H 6807 2445 30  0000 C CNN
+F 2 "" H 6807 2345 60  0000 C CNN
+F 3 "" H 6807 2345 60  0000 C CNN
+	1    6807 2345
+	0    1    1    0   
+$EndComp
+Entry Wire Line
+	6684 2445 6784 2545
+Wire Wire Line
+	6456 2445 6684 2445
+Wire Wire Line
+	6456 2545 6684 2545
+Wire Wire Line
+	6456 2645 6684 2645
+Wire Wire Line
+	6456 2745 6684 2745
+Wire Wire Line
+	6456 2845 6684 2845
+Wire Wire Line
+	6456 2945 6684 2945
+Wire Wire Line
+	6456 3045 6684 3045
+Wire Wire Line
+	6456 3145 6684 3145
+Entry Wire Line
+	6684 2545 6784 2645
+Entry Wire Line
+	6684 2645 6784 2745
+Entry Wire Line
+	6684 2745 6784 2845
+Entry Wire Line
+	6684 2845 6784 2945
+Entry Wire Line
+	6684 2945 6784 3045
+Entry Wire Line
+	6684 3045 6784 3145
+Entry Wire Line
+	6684 3145 6784 3245
+Text Label 6612 2445 0    39   ~ 0
+CLOCK
+Text Label 6613 2545 0    39   ~ 0
+DATA
+Text Label 6615 2645 0    39   ~ 0
+LATCH
+Text Label 6616 2745 0    39   ~ 0
+LOAD
+Text Label 6619 2845 0    39   ~ 0
+13
+Text Label 6623 2945 0    39   ~ 0
+12
+Text Label 6625 3045 0    39   ~ 0
+11
+Text Label 6621 3145 0    39   ~ 0
+10
+NoConn ~ 5506 2045
+NoConn ~ 5506 2145
+NoConn ~ 6456 2245
+Entry Wire Line
+	6684 2345 6784 2445
+Text Label 6645 2345 0    39   ~ 0
+VCC
+$Comp
+L power:GND #PWR0111
+U 1 1 60A1E862
+P 8196 3720
+F 0 "#PWR0111" H 8196 3470 50  0001 C CNN
+F 1 "GND" V 8201 3592 50  0000 R CNN
+F 2 "" H 8196 3720 50  0001 C CNN
+F 3 "" H 8196 3720 50  0001 C CNN
+	1    8196 3720
+	0    -1   -1   0   
+$EndComp
+Text Label 8319 3520 2    39   ~ 0
+12
+Entry Wire Line
+	8332 3520 8432 3420
+Wire Wire Line
+	8196 3520 8332 3520
+Text Notes 8387 3873 2    59   ~ 12
+ALTAVOZ
+$Comp
+L Device:Buzzer BUZZER1
+U 1 1 54BA896E
+P 8096 3620
+F 0 "BUZZER1" H 7996 3870 70  0001 C CNN
+F 1 "SPEAKER" H 7996 3370 70  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" H 8096 3620 60  0001 C CNN
+F 3 "~" H 8096 3620 60  0001 C CNN
+	1    8096 3620
+	-1   0    0    1   
+$EndComp
+Text Label 5351 2252 0    39   ~ 0
+GND
+NoConn ~ 5506 2245
+Text Label 6472 2045 0    39   ~ 0
+RAW9V
+NoConn ~ 6456 2145
+$Comp
+L power:GND #PWR0102
+U 1 1 607012A3
+P 5351 2252
+F 0 "#PWR0102" H 5351 2002 50  0001 C CNN
+F 1 "GND" H 5356 2087 39  0001 C CNN
+F 2 "" H 5351 2252 50  0001 C CNN
+F 3 "" H 5351 2252 50  0001 C CNN
+	1    5351 2252
+	0    1    1    0   
+$EndComp
+Entry Wire Line
+	6684 2045 6784 2145
+$Comp
+L Connector:Conn_01x04_Male RELE-1-2
+U 1 1 54BA95FF
+P 3664 4195
+F 0 "RELE-1-2" V 3614 4195 50  0000 C CNN
+F 1 "+ - 1 2" V 3714 4195 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 3664 4195 60  0001 C CNN
+F 3 "" H 3664 4195 60  0000 C CNN
+	1    3664 4195
+	0    -1   -1   0   
+$EndComp
+Text Label 3864 3850 1    39   ~ 0
+RELE1
+Text Label 3764 3852 1    39   ~ 0
+RELE2
+Entry Wire Line
+	3864 3681 3964 3581
+Wire Wire Line
+	3864 3995 3864 3681
+Entry Wire Line
+	3764 3681 3864 3581
+Wire Wire Line
+	3764 3995 3764 3681
+$Comp
+L power:GND #PWR0107
+U 1 1 60C871B4
+P 3664 3995
+F 0 "#PWR0107" H 3664 3745 50  0001 C CNN
+F 1 "GND" H 3669 3842 24  0000 C CNN
+F 2 "" H 3664 3995 50  0001 C CNN
+F 3 "" H 3664 3995 50  0001 C CNN
+	1    3664 3995
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 60C871BE
+P 3564 3995
+F 0 "#PWR0108" H 3564 3845 50  0001 C CNN
+F 1 "VCC" H 3579 4148 24  0000 C CNN
+F 2 "" H 3564 3995 50  0001 C CNN
+F 3 "" H 3564 3995 50  0001 C CNN
+	1    3564 3995
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6456 2045 6684 2045
+Text Notes 4351 3506 0    59   ~ 12
+RELES
+Text Notes 5810 1940 0    59   ~ 12
+ARDUINO
+Text Label 5506 2945 2    39   ~ 0
+RELE6
+Text Label 5506 2845 2    39   ~ 0
+RELE5
+Entry Wire Line
+	5506 2945 5406 3045
+Entry Wire Line
+	5506 2845 5406 2945
+Text Label 5506 2745 2    39   ~ 0
+RELE4
+Text Label 5506 2645 2    39   ~ 0
+RELE3
+Text Label 5506 2545 2    39   ~ 0
+RELE2
+Text Label 5506 2445 2    39   ~ 0
+RELE1
+Entry Wire Line
+	5506 2745 5406 2845
+Entry Wire Line
+	5506 2645 5406 2745
+Entry Wire Line
+	5506 2545 5406 2645
+Entry Wire Line
+	5506 2445 5406 2545
+Text Label 5506 3045 2    39   ~ 0
+RELE7
+$Comp
+L Connector:Conn_01x04_Male RELE-3-4
+U 1 1 54BA9611
+P 4102 4195
+F 0 "RELE-3-4" V 4052 4195 50  0000 C CNN
+F 1 "+ - 3 4" V 4152 4195 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 4102 4195 60  0001 C CNN
+F 3 "" H 4102 4195 60  0000 C CNN
+	1    4102 4195
+	0    -1   -1   0   
+$EndComp
+Text Label 4302 3850 1    39   ~ 0
+RELE3
+Text Label 4202 3852 1    39   ~ 0
+RELE4
+Wire Wire Line
+	4302 3995 4302 3681
+Wire Wire Line
+	4202 3995 4202 3681
+$Comp
+L power:GND #PWR0113
+U 1 1 60C8E495
+P 4102 3995
+F 0 "#PWR0113" H 4102 3745 50  0001 C CNN
+F 1 "GND" H 4107 3842 24  0000 C CNN
+F 2 "" H 4102 3995 50  0001 C CNN
+F 3 "" H 4102 3995 50  0001 C CNN
+	1    4102 3995
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 60C8E49F
+P 4002 3995
+F 0 "#PWR0114" H 4002 3845 50  0001 C CNN
+F 1 "VCC" H 4017 4148 24  0000 C CNN
+F 2 "" H 4002 3995 50  0001 C CNN
+F 3 "" H 4002 3995 50  0001 C CNN
+	1    4002 3995
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	4302 3681 4402 3581
+Entry Wire Line
+	4202 3681 4302 3581
+$Comp
+L Connector:Conn_01x04_Male RELE-5-6
+U 1 1 608BA5D3
+P 4560 4195
+F 0 "RELE-5-6" V 4510 4195 50  0000 C CNN
+F 1 "+ - 3 4" V 4610 4195 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 4560 4195 60  0001 C CNN
+F 3 "" H 4560 4195 60  0000 C CNN
+	1    4560 4195
+	0    -1   -1   0   
+$EndComp
+Text Label 4760 3850 1    39   ~ 0
+RELE5
+Text Label 4660 3852 1    39   ~ 0
+RELE6
+Wire Wire Line
+	4760 3995 4760 3681
+Wire Wire Line
+	4660 3995 4660 3681
+$Comp
+L power:GND #PWR0101
+U 1 1 608BA7CD
+P 4560 3995
+F 0 "#PWR0101" H 4560 3745 50  0001 C CNN
+F 1 "GND" H 4565 3842 24  0000 C CNN
+F 2 "" H 4560 3995 50  0001 C CNN
+F 3 "" H 4560 3995 50  0001 C CNN
+	1    4560 3995
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 608BA7D7
+P 4460 3995
+F 0 "#PWR0104" H 4460 3845 50  0001 C CNN
+F 1 "VCC" H 4475 4148 24  0000 C CNN
+F 2 "" H 4460 3995 50  0001 C CNN
+F 3 "" H 4460 3995 50  0001 C CNN
+	1    4460 3995
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	4760 3681 4860 3581
+Entry Wire Line
+	4660 3681 4760 3581
+$Comp
+L Connector:Conn_01x03_Male RELE-7
+U 1 1 608E101F
+P 5004 4195
+F 0 "RELE-7" V 4954 4195 50  0000 C CNN
+F 1 "+ - 3 4" V 5054 4195 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 5004 4195 60  0001 C CNN
+F 3 "" H 5004 4195 60  0000 C CNN
+	1    5004 4195
+	0    -1   -1   0   
+$EndComp
+Text Label 5104 3852 1    39   ~ 0
+RELE7
+Wire Wire Line
+	5104 3995 5104 3681
+$Comp
+L power:GND #PWR0105
+U 1 1 608E1111
+P 5004 3995
+F 0 "#PWR0105" H 5004 3745 50  0001 C CNN
+F 1 "GND" H 5009 3842 24  0000 C CNN
+F 2 "" H 5004 3995 50  0001 C CNN
+F 3 "" H 5004 3995 50  0001 C CNN
+	1    5004 3995
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 608E111B
+P 4904 3995
+F 0 "#PWR0106" H 4904 3845 50  0001 C CNN
+F 1 "VCC" H 4919 4148 24  0000 C CNN
+F 2 "" H 4904 3995 50  0001 C CNN
+F 3 "" H 4904 3995 50  0001 C CNN
+	1    4904 3995
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	5104 3681 5204 3581
+NoConn ~ 5505 3044
+NoConn ~ 5507 3145
+$Comp
+L Connector:Conn_01x06_Female INTERFAZ-CONECTOR1
+U 1 1 60931199
+P 7319 3720
+F 0 "INTERFAZ-CONECTOR1" V 7069 3723 50  0000 C CNN
+F 1 "+ - CLOCK DATA LATCH LOAD" V 7369 3720 31  0000 C CNN
+F 2 "Connector_JST:JST_EH_B6B-EH-A_1x06_P2.50mm_Vertical" H 7319 3720 60  0001 C CNN
+F 3 "" H 7319 3720 60  0000 C CNN
+	1    7319 3720
+	0    -1   1    0   
+$EndComp
+Entry Wire Line
+	7319 3520 7419 3420
+Entry Wire Line
+	7419 3520 7519 3420
+Entry Wire Line
+	7519 3520 7619 3420
+Entry Wire Line
+	7619 3520 7719 3420
+$Comp
+L power:VCC #PWR0109
+U 1 1 60963EBB
+P 7119 3520
+F 0 "#PWR0109" H 7119 3370 50  0001 C CNN
+F 1 "VCC" V 7072 3365 50  0000 C CNN
+F 2 "" H 7119 3520 50  0001 C CNN
+F 3 "" H 7119 3520 50  0001 C CNN
+	1    7119 3520
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60964409
+P 7219 3520
+F 0 "#PWR0110" H 7219 3270 50  0001 C CNN
+F 1 "GND" V 7251 3679 50  0000 C CNN
+F 2 "" H 7219 3520 50  0001 C CNN
+F 3 "" H 7219 3520 50  0001 C CNN
+	1    7219 3520
+	-1   0    0    1   
+$EndComp
+Text Label 7319 3520 1    39   ~ 0
+CLOCK
+Text Label 7419 3520 1    39   ~ 0
+DATA
+Text Label 7519 3520 1    39   ~ 0
+LATCH
+Text Label 7619 3520 1    39   ~ 0
+LOAD
+Wire Wire Line
+	5506 2345 5450 2345
+Wire Wire Line
+	5450 2345 5450 2252
+Wire Wire Line
+	6456 2345 6807 2345
+Wire Bus Line
+	4477 3581 5406 3581
+Wire Bus Line
+	3847 3581 4476 3581
+Wire Bus Line
+	6784 3420 8775 3420
+Wire Bus Line
+	5406 2341 5406 3581
+Wire Bus Line
+	6784 1685 6784 3420
+Wire Wire Line
+	5351 2252 5450 2252
+$EndSCHEMATC
