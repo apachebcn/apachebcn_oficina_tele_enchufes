@@ -8,8 +8,8 @@ Control remoto de enchufes, pensado para la oficina para encender y apagar fáci
 
 Interfaz:
 
-![](images/interfaz.jpg)
+![](interfaz.jpg)
 
 Relés:
 
-![](images/reles.jpg)
+![](reles.jpg)
